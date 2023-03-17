@@ -171,6 +171,7 @@
     .content{
         flex: 1 0 auto;                /* This prevents the content from taking up footer space, but still be scrollable*/
                                        /* https://css-tricks.com/couple-takes-sticky-footer/ */
+        margin: 1em 0;
     }
 
 /* #endregion */

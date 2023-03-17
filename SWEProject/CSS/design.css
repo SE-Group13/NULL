@@ -1,0 +1,176 @@
+@import "reset.css";
+
+/* #region          Global Stylings/Classes*/
+    body
+    {
+        /*Free Google Font*/
+        font-family: 'Zen Kaku Gothic Antique';
+        background-color: #ECE8D9;
+
+        /* These are used in order to properly position the header and the footer*/
+        display: flex;
+        flex-direction: column;
+        height: 100vh;                              /* Sets the height of the page itself to 100% of the viewport/screen */
+    }
+
+    /*Removes the underline from all hyperlinks*/
+    a
+    {
+        text-decoration: none;
+    }
+
+    /*Makes hyperlink text darken when hovered over*/
+    a:hover
+    {
+        color: #9e9e9e;
+        transition: 0.5s;
+    }
+
+    /*Makes a list inline*/
+    .inlineList li
+    {
+        display: inline;    /*Puts all the list items on one line*/
+        padding: 1em;       /*Pads out between list items*/
+    }
+
+/* #endregion */
+
+/* #region          Floating/Containers*/
+    /*Containers that hold stuff are able to compensate for floats*/
+    .container
+    {
+        overflow: auto;
+    }
+
+    .floatLeft
+    {
+        float: left;
+    }
+
+    .floatRight
+    {
+        float: right;
+    }
+
+/* #endregion */
+
+/* #region          Text Modifiers*/
+    .bold
+    {
+        font-weight: bold;
+    }
+
+    .italic
+    {
+        font-style: italic;
+    }
+
+    .text-white
+    {
+        color: white;
+    }
+
+/* #endregion */
+
+/* #region          Background Modifiers*/
+    .background-white
+    {
+        background-color: white;
+    }
+
+    /*This is used for the header and footer*/
+    .background-tundora
+    {
+        background-color: #494949;
+    }
+
+    /*This is used for Contact*/
+    .background-rumSwizzle
+    {
+        background-color: #FAF6E9;
+    }
+
+    /*I used this for Skills*/
+    .background-mercury
+    {
+        background-color: #e6e6e6;
+    }
+/* #endregion*/
+
+/* #region          Header 1-6 Font size applying*/
+    .h1
+    {
+        font-size: 2em;
+    }
+
+    .h2
+    {
+        font-size: 1.5em;
+    }
+
+    .h3
+    {
+        font-size: 1.17em;
+    }
+
+    .h4
+    {
+        font-size: 1em;
+    }
+
+    .h5
+    {
+        font-size: 0.83em;
+    }
+
+    .h6
+    {
+        font-size: 0.67em;
+    }
+
+/* #endregion */
+
+/* #region          Margin and Padding Classes*/
+    .navMargin
+    {
+        margin-top: 0.4em;
+    }
+
+
+    .p-1
+    {
+        padding: 1em;
+    }
+
+/* #endregion */
+
+
+
+
+
+
+
+
+
+
+
+/* Stuff thats specific is down here  */
+
+/* #region          This makes the Header and Footer Sticky */
+    header{
+        position: sticky;           /* The position must be stick instead of fixed as sticky affects page elements that are out of flow (flex items)*/
+        top: 0;                     /* https://codereview.stackexchange.com/questions/224880/using-flexbox-to-replace-fixed-and-absolute-positioning */
+        width: 100%;
+    }
+
+    footer{
+        margin-top: auto;
+        flex-shrink: 0;
+    }
+
+    .content{
+        flex: 1 0 auto;                /* This prevents the content from taking up footer space, but still be scrollable*/
+                                       /* https://css-tricks.com/couple-takes-sticky-footer/ */
+    }
+
+/* #endregion */

@@ -22,9 +22,9 @@
 		</div>
 
         <div>
-			<button class = 'startformbutton'>
+			<form class = 'startformbutton'>
 				Create Posting
-			</button>
+			</form>
         </div>
 
 

@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="CSS/design.css" />
-	<link rel="stylesheet" href="CSS/AddJob.css?v=1" />
+	<link rel="stylesheet" href="CSS/AddJob.css" />
 	<title>Jobs</title>
 </head>
 
@@ -22,8 +22,12 @@
 		</div>
 
         <div>
-
+			<button class = 'startformbutton'>
+				Create Posting
+			</button>
         </div>
+
+
 	</div>
 
 	<?php include ROOT . "/PHP Scripts/footer.php" ?>

@@ -34,3 +34,21 @@ body {
 	font-weight: 100;
 	margin-bottom: 0.4em;
 }
+
+.hidden{
+	display:hidden
+}
+
+.startformbutton{
+	display: block;
+	background-color: #1462a2;
+	width: 40%;
+	height:80%;
+	font-size:60px;
+	border-radius: 30px;
+	margin: 0 auto;
+	margin-top: 5%;
+	padding-bottom: 40%;
+	margin-bottom: 5%;
+}
+

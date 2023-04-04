@@ -29,7 +29,7 @@
                     <hr>
 
                     <button type = "button" onClick = "console.log('Log in')"> Log in </button>
-                    <button type = "button" onClick = "console.log('Register')"> Register </button>
+                    <button type="button" onClick="window.location.href='register.php'">Register</button>
                 </div>
                 <img src="Images/indexPhotos/homeBoxPhotos/trustpilot_v2.svg" alt="">
             </div>

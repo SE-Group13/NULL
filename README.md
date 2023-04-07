@@ -36,9 +36,9 @@ To install and run the application, follow these steps:
     ```
 
 
-4. Start the Apache server in XAMPP.
+5. Start the Apache server in XAMPP.
 
-5. Open your web browser and go to http://localhost/Pet_Minder/SWEProject/index.php to access the application.
+6. Open your web browser and go to http://localhost/Pet_Minder/SWEProject/index.php to access the application.
 
 
 

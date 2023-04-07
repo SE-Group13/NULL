@@ -9,12 +9,8 @@ if (empty($displayed_jobs)) {
     echo '<p> No jobs found.</p>';
 } else {
     foreach ($displayed_jobs as $job) {
-        // Generate a random number between 0 and 9
-        $random_number = random_int(0, 10);
-
         // Build the image file path
-        $image_path = "Images/image" . strval($random_number) . '.jpeg';
-
+        $image_path = "Images/" .  $job['image'];
         
         echo '<div class="job-box">';
         echo '<div>';

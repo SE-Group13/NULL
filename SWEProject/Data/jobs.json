@@ -7,7 +7,8 @@
       "city" : "London",
       "neighbourhood": "Borough",
       "date": "2023-04-20T15:45:00+00:00",
-      "budget": 30
+      "budget": 30,
+      "image":"image0.jpeg"
     },
     {
       "id": 1,
@@ -17,7 +18,8 @@
       "city": "London",
       "neighbourhood": "Islington",
       "date": "2023-04-21T09:00:00+00:00",
-      "budget": 50
+      "budget": 50,
+      "image":"image1.jpeg"
     },
     {
       "id": 2,
@@ -27,7 +29,8 @@
       "city": "London",
       "neighbourhood": "Hampstead",
       "date": "2023-05-23T13:00:00+00:00",
-      "budget": 80
+      "budget": 80,
+      "image":"image5.jpeg"
     },
     {
       "id": 3,
@@ -37,7 +40,8 @@
       "city": "London",
       "neighbourhood": "Finsbury Park",
       "date": "2023-06-15T16:30:00+00:00",
-      "budget": 20
+      "budget": 20,
+      "image":"image2.jpeg"
     },
     {
       "id": 4,
@@ -47,7 +51,8 @@
       "city" : "New York",
       "neighbourhood": "Brooklyn",
       "date": "2023-05-07T12:00:00+00:00",
-      "budget": 100
+      "budget": 100,
+      "image":"image6.jpeg"
     },
     {
       "id": 5,
@@ -57,7 +62,8 @@
       "city": "Edinburgh",
       "neighbourhood": "Leith",
       "date": "2023-08-23T10:00:00+00:00",
-      "budget": 50
+      "budget": 50,
+      "image":"image3.jpeg"
     },
     {
       "id": 6,
@@ -67,7 +73,8 @@
       "city" : "London",
       "neighbourhood": "Notting Hill",
       "date": "2023-07-10T12:00:00+00:00",
-      "budget": 80
+      "budget": 80,
+      "image":"image8.jpeg"
     },
     {
       "id": 7,
@@ -77,7 +84,8 @@
       "city": "Birmingham",
       "neighbourhood": "Selly Oak",
       "date": "2023-04-22T11:30:00+00:00",
-      "budget": 30
+      "budget": 30,
+      "image":"image4.jpeg"
     },
     {
       "id": 8,
@@ -87,7 +95,8 @@
       "city" : "Bristol",
       "neighbourhood": "Clifton",
       "date": "2023-04-30T12:00:00+00:00",
-      "budget": 40
+      "budget": 40,
+      "image":"image9.jpeg"
     },
     {
       "id": 9,
@@ -97,7 +106,8 @@
       "city": "Manchester",
       "neighbourhood": "Salford",
       "date": "2023-04-29T10:00:00+00:00",
-      "budget": 70
+      "budget": 70,
+      "image":"image7.jpeg"
     },
     {
       "id": 10,
@@ -107,7 +117,8 @@
       "city" : "Liverpool",
       "neighbourhood": "Baltic Triangle",
       "date": "2023-05-15T10:00:00+00:00",
-      "budget": 100
+      "budget": 100,
+      "image":"image10.jpeg"
     },
     {
       "id": 11,
@@ -117,7 +128,8 @@
       "city": "Edinburgh",
       "neighbourhood": "Queen Anne",
       "date": "2023-05-01T18:00:00+00:00",
-      "budget": 200
+      "budget": 200,
+      "image":"image11.jpeg"
     },
     {
       "id": 12,
@@ -127,6 +139,7 @@
       "city": "Liverpool",
       "neighbourhood": "Beacon Hill",
       "date": "2023-05-16T09:00:00+00:00",
-      "budget": 25
+      "budget": 25,
+      "image":"image12.jpeg"
     }
   ]

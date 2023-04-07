@@ -22,7 +22,7 @@
 		</div>
 
         <div>
-			<form class = 'form' method="POST" action ="./PHP Scripts/postJob.php" >
+			<form class = 'form' method="POST" action ="./PHP Scripts/postJob.php" enctype="multipart/form-data">
 				<label class = 'center'> Create Posting </label>
 
 				<label class = "label">Title of Job Posting</label>
@@ -42,22 +42,21 @@
 				</select>
 
 				<label class = "label">City</label>
-				<input class ='inputtitle' required type="text" name = "city" style="font-size: 20px;" maxlength="50" minlength="10"></input>
+				<input class ='inputtitle' required type="text" name = "city" style="font-size: 20px;"></input>
 
 				<label class = "label">Neighbourhood</label>
-				<input class ='inputtitle' required type="text" name = "neighbourhood" style="font-size: 20px;" maxlength="50" minlength="10"></input>
+				<input class ='inputtitle' required type="text" name = "neighbourhood" style="font-size: 20px;" ></input>
 
 				<div class = "datetimeSelection">
 					<div>
 						<label class = "label">Date:</label>
-						<input class ='dateSelect' required type="date" name = "date" style="font-size: 20px;" maxlength="50" minlength="10"></input>
-					</div>
-
-					<div>
-						<label class = "label">Time:</label>
-						<input class ='dateSelect' required type="time" name = "date" style="font-size: 20px;" maxlength="50" minlength="10"></input>
+						<input class ='dateSelect' required type="datetime-local" name = "date" style="font-size: 20px;" ></input>
 					</div>
 				</div>
+
+				<br>
+				<label class = "label" >Petminder's Reward (GBP):</label>
+				<input class ='dateSelect' required type="number" name = "deposit" style="font-size: 20px; min = '10'" ></input>
 
 				<label class= "inputImageLabel">
 					Add an image of your pet!
@@ -65,7 +64,6 @@
 					<br>
 					<img alt = "place image here!" src = "./Images/imageInputIcon.png" width="150px" class = imageIcon>
 					<script src=".\JS\AddJobsScripts\imageInputter.js"></script>
-					
 				</label>
 
 				<input type="submit" class = submit ></input>

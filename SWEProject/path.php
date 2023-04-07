@@ -1,6 +1,8 @@
 <?php
 
-define("ROOT", __DIR__ );
-
+    if (defined("ROOT")){ 
+        // echo("ROOT already defined"); 
+    }
+    else{ define("ROOT", __DIR__ ); }
 
 ?>

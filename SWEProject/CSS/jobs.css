@@ -6,8 +6,8 @@ html, body {
 }
 
 body {
-	background-color: #0a192f;
-	color: #ccd7f6;
+	background-color: #ECE8D9;
+	color: #494949;
 	font-family: Roboto;
 }
 
@@ -17,6 +17,7 @@ body {
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -57,7 +58,7 @@ body {
 .job-box {
 	padding: 1.5em;
 	margin: 1em;
-	background-color: #112340;
+	background-color: #FAF6E9;
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
@@ -65,11 +66,16 @@ body {
 }
 
 .job-title {
-	color: #8893b0;
+	color: #494949;
 	font-weight: 900;
 	font-size: 2em;
 	margin-top: 0;
 	margin-bottom: 0.6em;
+}
+
+.job-date {
+	color: #494949;
+	font-weight: 700;
 }
 
 .job-description {
@@ -79,7 +85,7 @@ body {
 }
 
 .description {
-	color: #8893b0;
+	color: #494949;
 	line-height: 1.5em;
 	width: 50%;
 }
@@ -115,48 +121,50 @@ body {
 .input-field {
 	width: 90%;
     border: none;
-    border-bottom: 1px solid #ccd7f6;
+    border-bottom: 1px solid #49494975;
 	padding: 10px 0;
     margin: 0 auto;
     outline: 0;
     background-color: transparent;
-	color: #ffffff;
+	color: #494949;
 	font-weight: 300;
 }
 
 .input-field:hover, .input-field:focus {
-    border-bottom: 2px solid #8FCF85;
+    border-bottom: 2px solid #0082C3;
 }
 
 .input-field::placeholder, .input-field::selection {
     font-weight: 100;
     font-size: 15px;
-    color: #8893b0;
+    color: #494949;
 	font-family: Roboto;
 	font-weight: 100;
 }
 
 .filter-btn {
-	border: 1px solid #ccd7f6;
+	border: 1px solid #494949;
 	font-size: 20px;
 	text-align: center;
 	border-radius: 15px;
+	cursor: pointer;
 }
 
 .filter-btn:hover, .filter-btn:focus {
-	border: 1px solid #8FCF85;
-	color: #8FCF85;
+	border: 2px solid #0082C3;
+	color: #0082C3;
+	cursor: pointer;
 }
 
 
 .see-job-btn {
-	border: 1px solid #ccd7f6;
+	border: 1px solid #494949;
 	font-size: 15px;
 	padding: 10px 30px;
 	max-width: 200px;
     outline: 0;
     background-color: transparent;
-	color: #ffffff;
+	color: #494949;
 	font-weight: 300;
 	text-align: center;
 	border-radius: 15px;
@@ -165,19 +173,20 @@ body {
 .see-job-btn a {
 	text-decoration: none;
 	font-size: 15px;
-	color: #ffffff;
+	color: #494949;
 	font-family: Roboto;
 	font-weight: 300;
 	text-align: center;
 }
 
 .see-job-btn:hover, .see-job-btn:focus a{
-	border: 1px solid #8FCF85;
-	color: #8FCF85;
+	border: 1px solid #0082C3;
+	color: #0082C3;
 }
 
 .see-job-btn a:hover, .see-job-btn a:focus {
-    color: #8FCF85;
+    color: #0082C3;
+	font-weight: 500;
 }
 
 
@@ -187,8 +196,9 @@ body {
 /* VIEW JOB PAGE */
 
 .confirmation-message {
-	font-weight: 100;
-	color: #8FCF85;
+	margin-top: 15px;
+	font-weight: 300;
+	color: #0082C3;
 }
 
 .job-details-container {
@@ -196,7 +206,7 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 2em;
-	background-color: #112340;
+	background-color: #FAF6E9;
 	border-radius: 15px;
 	width: 80%;
 }
@@ -209,6 +219,7 @@ body {
 
 .job-details p {
 	margin: .8em 0;
+	color: #494949;
 }
 
 .pet-image-bigger {
@@ -219,7 +230,7 @@ body {
 
 .show-interest-form {
 	outline: none;
-	border: 2px solid #8FCF85;
+	border: 2px solid #0082C3;
 	border-radius: 15px;
 	width: 80%;
 	margin-top: 50px;
@@ -231,21 +242,23 @@ body {
 }
 
 .show-interest-btn {
-	border: 1px solid #ccd7f6;
+	border: 1px solid #8893b0;
 	font-size: 15px;
 	padding: 10px 30px;
 	margin-top: 30px;
     outline: 0;
     background-color: transparent;
-	color: #ffffff;
+	color: #8893b0;
 	font-weight: 300;
 	text-align: center;
 	border-radius: 15px;
+	cursor: pointer;
 }
 
 .show-interest-btn:hover, .show-interest-btn:focus {
-	border: 1px solid #8FCF85;
-	color: #8FCF85;
+	border: 1px solid #0082C3;
+	color: #0082C3;
+	cursor: pointer;
 }
 
 legend {
@@ -261,8 +274,8 @@ legend {
 	font-weight: 300;
 	background: none;
 	border: none;
-	border-bottom: 1px solid #8FCF85;
-	color: #ccd7f6;
+	border-bottom: 1px solid #0082C3;
+	color: #494949;
 	outline: none;
 	resize: vertical;
 }
@@ -274,7 +287,7 @@ legend {
 .show-interest-message::placeholder {
 	font-family: Roboto;
 	font-weight: 300;
-	color: #ccd7f6;
+	color: #8893b0;
 }
 
 .input-error {

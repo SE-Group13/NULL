@@ -1,18 +1,44 @@
-# Pet Minder Application
-the project repository for ECS506, which is a Pet Minder Application based on the web related tech.
+# Software Engineering Group Project (ECS506U)
 
-#### Pet minder/Dog walker App (Mustafa)
+## Group 13
+Project Members: Ogulcan Gurelli, Abdussamed Han, Leon Lin Liu, Lok Nam, Ruihan Zhao, , Zareef Razzaque , Maria Surani
 
-This project is creating a hub (application) for pet owners and pet minder (might be a
-specific pet only such as dogs like gowalkies). The application enable allow pet owner to find
-minders (and vice-versa) based on ratings, testimonials, location and availability. The app
-should allow pet owners to give specific instructions to minder such as choosing walking
-routes, minding directions and etc. The app should enable minders to track their pets during
-walks or other activities.
+Module Organiser: Mustafa Bozkurt
+
+### Pet minder App 
+
+The Pet Minder application is designed to connect pet owners with pet minders, providing a hub for pet care services. The platform enables pet owners to search for minders based on various criteria, including ratings, testimonials, location, and availability. Likewise, minders can also search for pet owners seeking their services based on the same criteria.
+
+With Pet Minder, pet owners can provide specific instructions to their minders, such as preferred walking routes, feeding schedules, and other pet care needs. Minders can track pets during walks or other activities, giving pet owners peace of mind knowing their pets are in good hands.
+
+By offering a central platform for pet care services, Pet Minder aims to simplify the process of finding a trusted pet minder, and to provide an easy-to-use platform that streamlines communication between pet owners and minders.
 
 
-### Domain Analysis
+## Installation
 
-https://docs.google.com/document/d/14_CTGD40TzwouICZZNR4paFxvNf61aA9/edit?usp=sharing&ouid=111784326958311626430&rtpof=true&sd=true
+To install and run the application, follow these steps:
+
+1. Download and install XAMPP on your computer.
+
+2. Navigate in the terminal to the htdocs folder of XAMPP. (This is typically located in C:/xampp/htdocs on Windows, /opt/lampp/htdocs on Linux or /Applications/XAMPP/xamppfiles/htdocs)
+
+3. Clone or download the repository from GitHub and extract the files.
+    * You can run the command:
+    ```
+    git clone https://github.com/SE-Group13/Pet_Minder.git
+    ```
+4. Navigate in the terminal to the Pet_Minder/SWEProject/Data folder in order to grant access to write in the JSON files (which simulate our database). Please run the following commands (separately):
+
+    ```
+    chmod 777 interested_minders.json
+    chmod 777 jobs.json
+    
+    ```
+
+
+4. Start the Apache server in XAMPP.
+
+5. Open your web browser and go to http://localhost/Pet_Minder/SWEProject/index.php to access the application.
+
 
 

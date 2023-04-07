@@ -1,6 +1,6 @@
 <?php 
     include ("path.php");                       // Sets a base path to the root
-    require (ROOT . "/login.php");              // Used to test account features
+    require (ROOT . "/dynamicHeaderTest.php");              // Used to test account features
 
     // print_r($_SESSION);
     // echo("<br>")

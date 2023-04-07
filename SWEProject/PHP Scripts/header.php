@@ -11,8 +11,8 @@
                 </figure>
 
                 <?php
-
-                    if ($_SESSION['user_id'] == 0){
+                    // If the user_id hasn't been set, it must be a guest who hasn't logged in
+                    if (isset($_SESSION['user_type']) !== TRUE){
                         echo("Guest User");
                         ?>
                             <ul class="navMargin inlineList floatRight">
@@ -21,7 +21,8 @@
                             </ul>
                         <?php
                     }
-                    elseif ($_SESSION['user_id'] == 1) {
+                    // user_type 0 is Pet Owner
+                    elseif ($_SESSION['user_type'] == 0) {
                         echo("Pet Owner");
                         ?>
                             <ul class="navMargin inlineList floatRight">
@@ -31,7 +32,8 @@
                             </ul>
                         <?php
                     }
-                    elseif ($_SESSION['user_id'] == 2){
+                    // user_type 0 is Service Provider
+                    elseif ($_SESSION['user_type'] == 1){
                         echo("Service Provider");
                         ?>
                             <ul class="navMargin inlineList floatRight">

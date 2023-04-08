@@ -26,13 +26,6 @@
 
 		<div class="job-details-container">
             <?php
-                
-                // Generate a random number between 0 and 9
-                $random_number = random_int(0, 10);
-
-                // Build the image file path
-                $image_path = "Images/image" . strval($random_number) . '.jpeg';
-
                 // Get the job ID from the URL query string
                 
                 if (isset($_GET['id'])) {
@@ -47,6 +40,9 @@
                     // Get the job details by ID
                     $job = $jobs[$_SESSION['view_job_id']];
 
+                    // Build the image file path
+                    $image_path = "Images/PetImages/" .  $job['image'];
+                    
                     // Display the job details
                     echo '<div class="job-details">';
                     echo '<h2 class="job-title">' . $job['title'] . '</h2>';

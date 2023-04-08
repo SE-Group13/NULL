@@ -10,7 +10,7 @@ if (empty($displayed_jobs)) {
 } else {
     foreach ($displayed_jobs as $job) {
         // Build the image file path
-        $image_path = "Images/" .  $job['image'];
+        $image_path = "Images/PetImages/" .  $job['image'];
         
         echo '<div class="job-box">';
         echo '<div>';

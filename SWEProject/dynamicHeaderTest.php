@@ -1,13 +1,4 @@
-<?php
 
-
-session_start();
-$_SESSION['user_type'] = 0;
-
-
-
-
-?>
 
 <!-- Leon
     I've been using user id to test variable headers:

@@ -2,6 +2,7 @@
 
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
+        unset($_SESSION['user_type']);
     }
     // $_SESSION['id'] = $user['id'];
     $_SESSION['user_id'] = 0;
@@ -22,6 +23,7 @@
 
         foreach($users as $user){
             if ($username == strtolower($user['username']) && $password == strtolower($user['password'])){
+                unset($_SESSION['user_type']);
                 $_SESSION['user_type'] = $user['user_type'];
                 // echo "".$_SESSION["user_type"]."";
                 // echo "".$user["user_type"]."";

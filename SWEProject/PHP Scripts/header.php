@@ -16,8 +16,8 @@
                         echo("Guest User");
                         ?>
                             <ul class="navMargin inlineList floatRight">
-                                <li><a class="text-white" href="#1">Log in</a></li>
-                                <li><a class="text-white" href="#2">Register</a></li>
+                                <li><a class="text-white" href="loginPage.php">Log in</a></li>
+                                <li><a class="text-white" href="register.php">Register</a></li>
                             </ul>
                         <?php
                     }
@@ -28,7 +28,7 @@
                             <ul class="navMargin inlineList floatRight">
                                 <li><a class="text-white" href="#1">Post Jobs</a></li>
                                 <li><a class="text-white" href="#2">Current Jobs</a></li>
-                                <li><a class="text-white" href="#3">Log Out</a></li>
+                                <li><a class="text-white" href="PHP Scripts/logout.php">Log Out</a></li>
                             </ul>
                         <?php
                     }
@@ -39,7 +39,7 @@
                             <ul class="navMargin inlineList floatRight">
                                 <li><a class="text-white" href="#1">View Interested Jobs</a></li>
                                 <li><a class="text-white" href="jobs.php">View Jobs</a></li>
-                                <li><a class="text-white" href="#3">Log Out</a></li>
+                                <li><a class="text-white" href="PHP Scripts/logout.php">Log Out</a></li>
                             </ul>
                         <?php
                     } 

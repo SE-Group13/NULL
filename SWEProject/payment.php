@@ -14,20 +14,22 @@
 <body>
 	<div class="container">
 		<h1>Enter your payment detail here</h1>
-		<form action="process.php" method="post">
-			<input type="text" name="cardNumber" id="cardNumber" placeholder="card number">
+		<form action="PHP Scripts\processPayment.php" method="post">
+			<input type="text" name="product" id="product" placeholder="Product">
 
-			<input type="text" name="expiration" id="expiration" placeholder="MM/YY">
+			<input type="text" name="price" id="price" placeholder="Price">
 
-			<input type="text" name="cvc" id="cvc" placeholder="cvc">
+			<input type="text" name="description" id="description" placeholder="Description">
 
-			<input type="text" name="street" id="street" placeholder="street address">
+			<input type="text" name="street" id="street" placeholder="Street Address">
 
-			<input type="text" name="city" id="city" placeholder="city">
+			<input type="text" name="city" id="city" placeholder="City">
 
-			<input type="text" name="postcode" id="postcode" placeholder="postcode">
+			<input type="text" name="postcode" id="postcode" placeholder="Postcode">
 
-			<input type="submit" value="Pay with PayPal">
+			<input type="submit" name="submit" value="Pay with PayPal">
 		</form>
 	</div>
 </body>
+
+</html>

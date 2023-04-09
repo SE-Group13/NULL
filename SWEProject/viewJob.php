@@ -82,11 +82,11 @@
         }
         ?>
 	</div>
-    <script>
-        function openPopup() {
-            window . open("/Pet_Minder/SWEProject/interest_minder/show_interest_list.php?id=' . $_GET["id"] . '", MInder List, width=600,height=400)
-        }
-    </script>
+	<script>
+		function openPopup() {
+			window.open("/Pet_Minder/SWEProject/interest_minder/show_interest_list.php<?php echo "?id="; echo $_GET['id'] ?>", "MInder List", "width=600,height=400");
+		}
+	</script>
 
 
     <?php

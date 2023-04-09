@@ -18,7 +18,7 @@ $execution->setPayerId($payerId);
 try {
     $payment->execute($execution, $apiContext);
     // The payment has been executed successfully
-    header( "refresh:5;url=../jobs.php" );
+    header( "refresh:5;url=postJob.php" );
     echo 'Payment successful! Thank you for your purchase, redirecting after 5 seconds.';
 } catch (\PayPal\Exception\PayPalConnectionException $ex) {
     // Handle PayPal API errors

@@ -29,7 +29,7 @@ $amount->setCurrency('GBP')
 ->setTotal($_POST['price']);
 
 $item = new Item();
-$item->setName('Product Name')
+$item->setName($_POST['jobName'])
 ->setCurrency('GBP')
 ->setQuantity(1)
 ->setPrice($_POST['price']);

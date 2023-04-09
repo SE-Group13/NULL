@@ -6,8 +6,8 @@ html, body {
 }
 
 body {
-	background-color: #0a192f;
-	color: #ccd7f6;
+	background-color: #ECE8D9;
+	color: #1a1c1f;
 	font-family: Roboto;
 }
 
@@ -31,7 +31,7 @@ body {
 
 .subtitle {
 	font-size: 1.5em;
-	font-weight: 100;
+	font-weight: 500;
 	margin-bottom: 0.4em;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .form{
 	display: block;
-	background-color: #1462a2;
+	background-color: #ffffff;
 	width: 40%;
 	height:80%;
 	font-size:60px;
@@ -55,6 +55,15 @@ body {
 .label{
 	font-size: 25px;
 	padding-left: 30px;
+	
+}
+
+input{
+	border: black solid 1px;
+}
+
+select{
+	border: black solid 1px;
 }
 
 .center{

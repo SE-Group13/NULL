@@ -1,20 +1,14 @@
 [
     {
         "id": 0,
-        "user_type" : "1",
+        "user_type" : "0",
         "username" : "test",
-        "password" : "test123"      
+        "password" : "test"      
     },
     {
         "id": 1,
         "user_type" : "1",
         "username" : "minder",
         "password" : "minder"
-    },
-    {
-        "id": 2,
-        "user_type" : "0",
-        "username" : "owner",
-        "password" : "owner"
     }
 ]

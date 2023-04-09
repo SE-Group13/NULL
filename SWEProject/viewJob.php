@@ -16,8 +16,7 @@
 </head>
 
 <body>
-    <?php
-    include ROOT . "/PHP Scripts/header.php" ?>
+    <?php include ROOT . "/PHP Scripts/header.php" ?>
 
 	<div class="container content cont">
 		<div class="intro">
@@ -27,7 +26,6 @@
 
 		<div class="job-details-container">
             <?php
-
                 // Get the job ID from the URL query string
                 
                 if (isset($_GET['id'])) {
@@ -58,42 +56,27 @@
                     echo '<img class="pet-image-bigger" src="' . $image_path . '" alt="Pet Image">';
                 }
             ?>
-
 		</div>
-        <?php
-
-        if (isset($_GET['id']) and ( isset($_SESSION['user_type']) and $_SESSION['user_type'] == 1) or (isset($_GET['type']) and $_GET['type']==1 )) {
-            echo '<form method="POST" action="viewJob.php" id="show-interest-form">';
-            echo     '<fieldset class="show-interest-form">';
-            echo         '<legend>Introduce yourself! </legend>';
-            echo         '<div class="show-interest-input">';
-            echo             '<textarea name="content" class="show-interest-message" id="content" placeholder="Enter your message here" rows="10"></textarea>';
-           echo              '<button class="show-interest-btn" type="submit" value="Show">Show Interest</button>';
-           echo          '</div>';
-           echo      '</fieldset>';
-           echo  '</form>';
-            } elseif (( isset($_SESSION['user_type']) and $_SESSION['user_type'] == 1)) {
-            echo '<div class="job-details">';
-           echo      '<h2 class="confirmation-message">Your interest has been successfully registered!</h2>';
-           echo  '</div>';
-            echo '<a href="http://localhost/Pet_Minder/SWEProject/jobs.php">';
-            echo     '<button class="show-interest-btn">Go back to all posts</button>';
-           echo  '</a>';
-        }
-        ?>
+        <?php if (isset($_GET['id'])) { ?>
+            <form method="POST" action="viewJob.php" id="show-interest-form">
+                <fieldset class="show-interest-form">
+                    <legend>Introduce yourself! </legend>
+                    <div class="show-interest-input">
+                        <textarea name="content" class="show-interest-message" id="content" placeholder="Enter your message here" rows="10"></textarea>
+                        <button class="show-interest-btn" type="submit" value="Show">Show Interest</button>
+                    </div>
+                </fieldset>
+            </form>
+        <?php } else { ?>
+            <div class="job-details">
+                <h2 class="confirmation-message">Your interest has been successfully registered!</h2>
+            </div>
+            <a href="http://localhost/Pet_Minder/SWEProject/jobs.php">
+                <button class="show-interest-btn">Go back to all posts</button>
+            </a>
+        <?php } ?>
 	</div>
-	<script>
-		function openPopup() {
-			window.open("/Pet_Minder/SWEProject/interest_minder/show_interest_list.php<?php echo "?id="; echo $_GET['id'] ?>", "MInder List", "width=600,height=400");
-		}
-	</script>
 
-
-    <?php
-        if( (isset($_SESSION['user_type']) and $_SESSION['user_type'] == 0) or (isset($_GET['type']) and $_GET['type']==0 )) { ?>
-            <button class="show-interest-btn" onclick="openPopup()">Show Interest Minders</button>
-    <?php    }
-    ?>
 
     <?php include ROOT . "/PHP Scripts/footer.php" ?>
 </body>

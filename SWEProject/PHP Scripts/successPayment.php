@@ -17,7 +17,7 @@ $execution = new \PayPal\Api\PaymentExecution();
 $execution->setPayerId($payerId);
 try {
     $payment->execute($execution, $apiContext);
-    // The payment has been executed successfully
+    // The payment has been executed successfully, redirect to postJob.php to upload job data into database
     header( "refresh:5;url=postJob.php" );
     echo 'Payment successful! Thank you for your purchase, redirecting after 5 seconds.';
 } catch (\PayPal\Exception\PayPalConnectionException $ex) {

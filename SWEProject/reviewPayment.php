@@ -52,10 +52,10 @@ $_SESSION['data'] = [
 <body>
     <?php include ROOT . "/PHP Scripts/header.php" ?>
     <div class="container content">
-        <header class="intro">
-            <h1>Review Job Details</h1>
-            <h2>This is how your job information looks.</h2>
-        </header>
+        <div class="intro">
+            <h1 class="titles">Review Job Details</h1>
+            <h2 class="subtitles">This is how your job information looks.</h2>
+        </div>
     
         <div class="job-detail-container">
             <?php
@@ -75,7 +75,7 @@ $_SESSION['data'] = [
                 echo '<img class="pet-image-bigger" src="' . $image_path . '" alt="Pet Image">';
             ?>
         </div>
-        <form action="PHP Scripts\processPayment.php" method="post">
+        <form action="PHP Scripts\processPayment.php" method="post" class="form">
             <button onclick="history.back()" type="button" class="edit">Edit</button>
             <button type="submit" class="submit">Submit and pay with PayPal</button>
             <?php

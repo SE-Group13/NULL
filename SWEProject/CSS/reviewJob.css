@@ -1,37 +1,29 @@
+
+
 .content{
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .div{
     display: block;
 }
 
-.h1{
+.titles{
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 0.4em;
 }
 
-.h2{
+.subtitles{
     font-size: 1.5em;
     font-weight: 100;
     margin-bottom: 0.4em;
-}
-
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-size: 100%;
-    font-weight: normal;
-    font-style: normal;
-    vertical-align: baseline;
 }
 
 .job-detail-container{
@@ -44,9 +36,15 @@
     width: 80%;
 }
 
-.job-details{
+.job-details {
     display: flex;
     flex-direction: column;
+    width: 60%;
+}
+
+.job-details p {
+    margin: 0.8em 0;
+    color: #494949;
 }
 
 .pet-image-bigger {
@@ -106,4 +104,18 @@
 .edit:active {
 	position:relative;
 	top:1px;
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: baseline;
+}
+
+.form{
+	padding: 1%;
 }

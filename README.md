@@ -32,7 +32,7 @@ To install and run the application, follow these steps:
     ```
     chmod 777 interested_minders.json
     chmod 777 jobs.json
-    
+
     ```
 
 

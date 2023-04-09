@@ -78,13 +78,6 @@
 	</div>
 
 
-    <script>
-        function openPopup() {
-            window.open("/Pet_Minder/SWEProject/interest_minder/show_interest_list.php<?php echo "?id="; echo $_GET['id'] ?>", "MInder List", "width=600,height=400");
-        }
-    </script>
-    <button class="show-interest-btn" onclick="openPopup()">Show Interest Minders</button>
-
     <?php include ROOT . "/PHP Scripts/footer.php" ?>
 </body>
 

@@ -24,9 +24,6 @@ if (isset($_FILES['jobImage'])) {
 $data =  json_decode( file_get_contents('Data\jobs.json', true));
 $count = count($data);
 
-
-$_SESSION['jobdata'] = [$count, $_POST["jobTitle"],$_POST["jobDiscription"], $_POST["petType"],  $_POST["city"], $_POST["neighbourhood"], $_POST["date"] ,$_POST['deposit'], $newId,];
-
 $_SESSION['data'] = [
     "id" => $count,
     "title" => $_POST["jobTitle"],
@@ -88,5 +85,5 @@ $_SESSION['data'] = [
             ?>
         </form>
     </div>
-    <?php include "footer.php" ?>
+    <?php include ROOT . "/PHP Scripts/footer.php" ?>
 </body>

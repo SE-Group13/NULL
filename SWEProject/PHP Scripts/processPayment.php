@@ -50,7 +50,7 @@ $transaction->setAmount($amount)
 
 $redirectUrls = new RedirectUrls();
 $redirectUrls->setReturnUrl("http://localhost/SWEProject/PHP%20Scripts/successPayment.php") // url for executing payment
-->setCancelUrl("http://localhost/SWEProject/jobs.php");
+->setCancelUrl("http://localhost/SWEProject/AddJob.php");
 
 $payment = new Payment();
 $payment->setIntent('sale')

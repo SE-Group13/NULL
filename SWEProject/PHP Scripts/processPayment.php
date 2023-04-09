@@ -10,6 +10,7 @@ use PayPal\Api\Payment;
 use PayPal\Api\RedirectUrls;
 use PayPal\Api\Transaction;
 
+// add paypal sandbox token and secret below
 $apiContext = new \PayPal\Rest\ApiContext(
     new \PayPal\Auth\OAuthTokenCredential(
         'token',
@@ -29,7 +30,7 @@ $amount->setCurrency('GBP')
 ->setTotal($_POST['price']);
 
 $item = new Item();
-$item->setName('Product Name')
+$item->setName($_POST['jobName'])
 ->setCurrency('GBP')
 ->setQuantity(1)
 ->setPrice($_POST['price']);
@@ -47,7 +48,7 @@ $transaction->setAmount($amount)
 ->setDescription($_POST['description']);
 
 $redirectUrls = new RedirectUrls();
-$redirectUrls->setReturnUrl("http://localhost/SWEProject/PHP%20Scripts/successPayment.php")
+$redirectUrls->setReturnUrl("http://localhost/SWEProject/PHP%20Scripts/successPayment.php") // url for executing payment
 ->setCancelUrl("http://localhost/SWEProject/jobs.php");
 
 $payment = new Payment();

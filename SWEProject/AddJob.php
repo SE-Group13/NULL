@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="CSS/design.css" />
 	<link rel="stylesheet" href="CSS/AddJob.css" />
-	<title>Jobs</title>
+	<title>Post Jobs</title>
 </head>
 
 <body>

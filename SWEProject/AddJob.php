@@ -22,7 +22,7 @@
 		</div>
 
         <div>
-			<form class = 'form' method="POST" action ="./PHP Scripts/postJob.php" enctype="multipart/form-data">
+			<form class = 'form' method="POST" action ="./PHP Scripts/moveToPayment.php" enctype="multipart/form-data">
 				<label class = 'center'> Create Posting </label>
 
 				<label class = "label">Title of Job Posting</label>

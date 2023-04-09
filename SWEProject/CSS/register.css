@@ -161,7 +161,7 @@
     .homeBoxWrapper{
         background-image: url('../Images/indexPhotos/homeBoxPhotos/homeImage.jpg');
         background-size: cover;
-        padding: 15em 0em; 
+        padding: 5em 0em; 
     }
 
     .homeBoxWrapper img{
@@ -178,7 +178,7 @@
         padding: 2em;
         
         /* Centers the div */
-        width: 50%;
+        width: 70%;
         margin: auto;
 
         /* Centers the text and buttons */
@@ -187,7 +187,7 @@
 
     .homeBox hr{
         background-color: black;
-        height: 1px;
+        height: 10px;
         margin: 1em 0em;
     }
 
@@ -202,12 +202,51 @@
         background-color: #FAF6E9;
     }
 
+    .radio-group input[type="radio"] {
+        display: none; /* hide the default radio buttons */
+      }
+      
+      .radio-group label {
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .radio-group label:hover {
+        background-color: rgb(141, 124, 92);
+      }
+      
+      .radio-group input[type="radio"]:checked + label {
+        background-color: rgb(128, 83, 0);
+        color: white;
+      }
+
+      input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        background-color: #f2f2f2;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      
+
+    
+
+
 
 /*#endregion*/
 
 /* #region          How it Works Section*/
 
-    /* The wrapper for the entire section */ 
+    
     .howItWorksWrapper{
         /* background-color: red; */
         background-color: white;
@@ -376,4 +415,7 @@
     margin: 1em;
 }
 
-/* #endregion */
+
+
+
+

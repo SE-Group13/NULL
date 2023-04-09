@@ -1,0 +1,41 @@
+[
+    {
+        "username": "werwfsdDSADAS",
+        "password": "$2y$10$X\/shX8FyjwS2QqWmYZ2X4O.tMltYoVKmQPbUz.VeeYkmZtkcTVPIG",
+        "firstname": "Ogulcan",
+        "lastname": "Gurelli",
+        "email": "oj09ism@hotmail.com",
+        "dob": "2023-04-21",
+        "gender": "female",
+        "usertype": "pet-owner",
+        "pettype": "dog",
+        "petname": "FDSFSDF",
+        "petage": "54"
+    },
+    {
+        "username": "hithere67",
+        "password": "$2y$10$GTJ1sRylfcNEY94FlVldh.G9YQBtk5IxbiT9CCpPY7ONGqdTib0H6",
+        "firstname": "oLJEN",
+        "lastname": "TOMMY",
+        "email": "oj09ism@hotmail.com",
+        "dob": "2023-04-21",
+        "gender": "male",
+        "usertype": "pet-owner",
+        "pettype": "dog",
+        "petname": "fsdf",
+        "petage": "2"
+    },
+    {
+        "username": "asdasdas",
+        "password": "$2y$10$oPOFzItMsals9PdFCy14A.mwUYyvUXuy1audhTJWMnoih0e1dTJKi",
+        "firstname": "dsdsa",
+        "lastname": "dsadsad",
+        "email": "oj09ism@hotmail.com",
+        "dob": "2023-04-19",
+        "gender": "male",
+        "usertype": "pet-sitter",
+        "pettype": "dog",
+        "petname": "petname",
+        "petage": "0"
+    }
+]

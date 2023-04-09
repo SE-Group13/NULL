@@ -42,8 +42,8 @@
             ?>
         </div>
         <form action="PHP Scripts\processPayment.php" method="post">
-            <button formaction="history.back()">Edit</button>
-            <button type="submit">Submit and pay with PayPal</button>
+            <button formaction="history.back()" class="edit">Edit</button>
+            <button type="submit" class="submit">Submit and pay with PayPal</button>
             <?php
                 echo '<input type="hidden" id="price" name="price" value="' . $_SESSION['data']['budget'] . '">';
                 echo '<input type="hidden" id="description" name="description" value="' . $_SESSION['data']['description'] . '">';

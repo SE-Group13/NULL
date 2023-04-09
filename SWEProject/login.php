@@ -1,11 +1,8 @@
 <?php
 
-    if (session_status() === PHP_SESSION_NONE) {
-        session_start();
-        unset($_SESSION['user_type']);
-    }
-    // $_SESSION['id'] = $user['id'];
-    $_SESSION['user_id'] = 0;
+    // Leon: Redid the session starting code
+    if (session_status() === PHP_SESSION_NONE) { session_start(); }
+   
  
     // Read the JSON file
     $json_data = file_get_contents(ROOT . "/Data/users.json");
@@ -23,10 +20,8 @@
 
         foreach($users as $user){
             if ($username == strtolower($user['username']) && $password == strtolower($user['password'])){
-                unset($_SESSION['user_type']);
                 $_SESSION['user_type'] = $user['user_type'];
-                // echo "".$_SESSION["user_type"]."";
-                // echo "".$user["user_type"]."";
+                $_SESSION['user_id'] = $user['id'];             // Leons Modification
                 header("Location: index.php");
             }
         }

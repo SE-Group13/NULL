@@ -61,7 +61,7 @@
             </form>
         </div>
         <div class="posts">
-            <?php require (ROOT . "/PHP Scripts/display_jobs.php") ?>
+            <?php require (ROOT . "/PHP Scripts/display_o_jobs.php") ?>
         </div>
     </div>
 </div>

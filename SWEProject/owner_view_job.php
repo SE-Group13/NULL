@@ -67,13 +67,7 @@ include ROOT . "/PHP Scripts/header.php" ?>
     }
 </script>
 
-
-<?php
-if( (isset($_SESSION['user_type']) and $_SESSION['user_type'] == 0) or (isset($_GET['type']) and $_GET['type']==0 )) { ?>
     <button class="show-interest-btn" onclick="openPopup()">Show Interest Minders</button>
-<?php    }
-?>
-
 <?php include ROOT . "/PHP Scripts/footer.php" ?>
 </body>
 

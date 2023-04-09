@@ -4,5 +4,11 @@
         "user_type" : "1",
         "username" : "test",
         "password" : "test123"      
+    },
+    {
+        "id": 1,
+        "user_type" : "1",
+        "username" : "minder",
+        "password" : "minder"
     }
 ]

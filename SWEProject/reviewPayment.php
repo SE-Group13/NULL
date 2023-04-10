@@ -25,6 +25,7 @@ $data =  json_decode( file_get_contents('Data\jobs.json', true));
 $count = count($data);
 
 $_SESSION['data'] = [
+    'userid' => $_SESSION['user_id'],
     "id" => $count,
     "title" => $_POST["jobTitle"],
     "description" => $_POST["jobDiscription"],

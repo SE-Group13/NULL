@@ -28,6 +28,7 @@ $count = count($data);
 $_SESSION['jobdata'] = [$count, $_POST["jobTitle"],$_POST["jobDiscription"], $_POST["petType"],  $_POST["city"], $_POST["neighbourhood"], $_POST["date"] ,$_POST['deposit'], $newId,];
 
 $_SESSION['data'] = [
+    'userid' => $_SESSION['user_id'],
     "id" => $count,
     "title" => $_POST["jobTitle"],
     "description" => $_POST["jobDiscription"],
@@ -39,5 +40,5 @@ $_SESSION['data'] = [
     "image"=>$newId,
 ];
 
-header('location: ../reviewPayment.php')
+header('location:./postJob.php')
 ?>

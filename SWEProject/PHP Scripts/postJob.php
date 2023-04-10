@@ -2,15 +2,18 @@
 session_start();
 
 
+if ($_SESSION['data']!= []){
+
+    $data =  json_decode( file_get_contents('.\..\Data\jobs.json', true));
+    $data[] = $_SESSION['data'];
 
 
-$data =  json_decode( file_get_contents('.\..\Data\jobs.json', true));
-$count = count($data);
-$data[] = $_SESSION['data'];
+    file_put_contents('.\..\Data\jobs.json', json_encode($data));
 
-
-file_put_contents('.\..\Data\jobs.json', json_encode($data))
+    $_SESSION['data'] = [];
+}
 ?>
+
 
 
 

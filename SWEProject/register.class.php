@@ -71,7 +71,8 @@ class RegisterUser {
             "usertype" => $this->usertype,
             "pettype" => $this->pettype,
             "petname" => $this->petname,
-            "petage" => $this->petage
+            "petage" => $this->petage,
+            "uniqueid" => $this->generateUniqueId()
         ];
 
 
@@ -89,6 +90,19 @@ class RegisterUser {
         } else {
             return true;
         }
+    }
+
+
+    private function generateUniqueId() {
+        $length = 10; // The length of the ID
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; // The characters to use for the ID
+        $id = '';
+
+        for ($i = 0; $i < $length; $i++) {
+            $id .= $characters[rand(0, strlen($characters) - 1)];
+        }
+
+        return $id;
     }
 
     private function usernameExists(){
@@ -115,6 +129,8 @@ class RegisterUser {
 
 
 }
+
+
 
 
 

@@ -4,17 +4,6 @@
     require ("register.class.php");
 
 
-    function generateUniqueId() {
-        $length = 10; // The length of the ID
-        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; // The characters to use for the ID
-        $id = '';
-
-        for ($i = 0; $i < $length; $i++) {
-            $id .= $characters[rand(0, strlen($characters) - 1)];
-        }
-
-        return $id;
-    }
 
     if (isset($_POST['submit'])) {
         $secret = "6LfhVGolAAAAAD1fl_oTheqPkrzgm6lbXgM8fe-e";

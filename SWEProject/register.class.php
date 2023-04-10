@@ -120,7 +120,8 @@ class RegisterUser {
         if ($this->usernameExists() == FALSE) {
             array_push($this->stored_users, $this->new_user);
             if (file_put_contents($this->storage, json_encode($this->stored_users, JSON_PRETTY_PRINT))) {
-                return $this->success = "reg successful";
+                header("Location: loginPage.php");
+                exit(); // make sure to call exit to prevent further execution of the script
             } else {
                 return $this->error = "something went wrong, try again";
             }

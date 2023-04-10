@@ -46,12 +46,14 @@
         <div class = "container content">
             <div class = "homeBoxWrapper">
                 <div class = "homeBox">
-                            <h1>Sign Up</h1><br>
+                            <h1 class = "signup" >Sign Up</h1><br>
 
 
 
                 <form action="" method="post">
+                <hr class = "line">
                     <div class="radio-group" name = "usertype">
+                        <p> Please select whether you will be using the site as a Pet Sitter or Pet Owner </p><br>
                         <input type="radio" id="pet-sitter" name="usertype" value="pet-sitter" checked>
                         <label for="pet-sitter">Pet Sitter</label>
                         <input type="radio" id="pet-owner" name="usertype" value="pet-owner">
@@ -91,14 +93,18 @@
 
 
                     
-                    <label for="document">Upload Document:</label>
+                    <label for="document">Upload Passport Photo:</label>
                     <input type="file" name="document" id="document">
+                    <p> Why do we ask for this?</p>
+                    <p> We must verify that everyone who uses our service is who they say they are, for the safety of all users across the platform</p>
                     <br>
                     <br>
 
 
 
                     <div id="pet-type-dropdown" style="display: none;">
+                    <h1> As a Pet Owner, we need each Owner to add at least one pet when signing up! </h1>
+                    <h1> Don't worry, you'll be able to add more pets when your account is created!</h1>
                         <label for="pet-type">Pet Type:</label>
                         <select id="pet-type" name="pettype">
                             <option value="dog">Dog</option>
@@ -106,11 +112,11 @@
                         </select>
 
 
-                        <label for="name">Pet name:</label>
+                        <label for="name">Pet Name:</label>
                         <input type="text" id="petname" name="petname" value ="Enter the name of your pet" required><br>
 
                         
-                        <label for="age">Pet age:</label>
+                        <label for="age">Pet Age:</label>
                         <input type="text" id="petage" name="petage" value ="0" required pattern="[0-9]+"><br>
                     </div><br>
 
@@ -123,7 +129,8 @@
                         <div class="row">
                         <div class="g-recaptcha" data-sitekey="6LfhVGolAAAAAKtKLSemG4Hoouokf5MtHevX_FgA"></div>
                         </div>
-                        <button class="btn wave-effect wave-light" type="submit" name="submit">Register</button>
+                        <br>
+                        <button class="btn wave-effect wave-light" type="submit" name="submit">REGISTER</button>
                     </form>
                     </div>
 
@@ -147,3 +154,4 @@
         <?php include_once (ROOT . '/PHP Scripts/footer.php') ?> <!-- Footer is always the same -->
     </body>
 </html>
+

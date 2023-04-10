@@ -133,6 +133,19 @@
         "petname": "Enter the name of your pet",
         "petage": "0",
         "uniqueid": "8WJBoxFmtY"
+    },
+    {
+        "username": "Chad",
+        "password": "$2y$10$8ng7ulDQXAe9D3XTFFfvOug2xgg4DP4tqa3la5EnUZDuoHRuoi7r2",
+        "firstname": "Ogulcan",
+        "lastname": "Gurelli",
+        "email": "oj09ism@hotmail.com",
+        "dob": "2023-04-05",
+        "gender": "male",
+        "usertype": "pet-owner",
+        "pettype": "cat",
+        "petname": "Jet",
+        "petage": "1",
+        "uniqueid": "hvX1JuxqRj"
     }
 ]
-

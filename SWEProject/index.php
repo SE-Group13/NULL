@@ -28,8 +28,15 @@
                     <p class = "h2"> Book trusted services and care. </p>
                     <hr>
 
-                    <button type = "button" onClick="window.location.href='loginPage.php'"> Log in </button>
-                    <button type="button" onClick="window.location.href='register.php'">Register</button>
+                    <?php
+                        if (isset($_SESSION['user_type']) !== TRUE){
+                            ?>
+                                <button type = "button" onClick="window.location.href='loginPage.php'"> Log in </button>
+                                <button type="button" onClick="window.location.href='register.php'">Register</button>
+                            <?php
+                        }
+                    ?>
+
                 </div>
                 <img src="Images/indexPhotos/homeBoxPhotos/trustpilot_v2.svg" alt="">
             </div>

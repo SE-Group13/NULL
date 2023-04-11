@@ -1,6 +1,7 @@
 <?php
 require '../vendor/autoload.php';
 
+// replace token and secret below with the yours one get from https://developer.paypal.com/dashboard/accounts
 $apiContext = new \PayPal\Rest\ApiContext(
     new \PayPal\Auth\OAuthTokenCredential(
         'token',

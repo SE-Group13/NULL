@@ -1,5 +1,5 @@
 <?php
-
+// dependencies
 require '../vendor/autoload.php';
 
 use PayPal\Api\Amount;
@@ -11,7 +11,7 @@ use PayPal\Api\Payment;
 use PayPal\Api\RedirectUrls;
 use PayPal\Api\Transaction;
 
-// add paypal sandbox token and secret below
+// replace token and secret below with the yours one get from https://developer.paypal.com/dashboard/accounts
 $apiContext = new \PayPal\Rest\ApiContext(
     new \PayPal\Auth\OAuthTokenCredential(
         'token',
@@ -19,9 +19,12 @@ $apiContext = new \PayPal\Rest\ApiContext(
     )
 );
 
+// setting mode to sandbox
 $apiContext->setConfig([
     'mode' => 'sandbox'
 ]);
+
+// setting objects or variables for payment processing
 
 $payer = new Payer();
 $payer->setPaymentMethod("paypal");
@@ -50,7 +53,7 @@ $transaction->setAmount($amount)
 
 $redirectUrls = new RedirectUrls();
 $redirectUrls->setReturnUrl("http://localhost/SWEProject/PHP%20Scripts/successPayment.php") // url for executing payment
-->setCancelUrl("http://localhost/SWEProject/AddJob.php");
+->setCancelUrl("http://localhost/SWEProject/AddJob.php"); // if cancel payment, go to addjob page
 
 $payment = new Payment();
 $payment->setIntent('sale')
@@ -61,7 +64,7 @@ $payment->setIntent('sale')
 try {
 $payment->create($apiContext);
 $approvalUrl = $payment->getApprovalLink();
-header("Location: {$approvalUrl}");
+header("Location: {$approvalUrl}"); // redirect to paypal website
 } catch (Exception $e) {
 die($e->getMessage());
 }

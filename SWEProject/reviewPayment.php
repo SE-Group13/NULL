@@ -24,6 +24,7 @@ if (isset($_FILES['jobImage'])) {
 $data =  json_decode( file_get_contents('Data\jobs.json', true));
 $count = count($data);
 
+// Get job data from form, store them in an session array
 $_SESSION['data'] = [
     'userid' => $_SESSION['user_id'],
     "id" => $count,
@@ -63,7 +64,7 @@ $_SESSION['data'] = [
                 // Build the image file path
                 $image_path = "Images/PetImages/" .  $_SESSION['data']['image'];
 
-                // Display the job details
+                // Display the job details from the session array
                 echo '<div class="job-details">';
                 echo '<h2 class="job-title">' . $_SESSION['data']['title'] . '</h2>';
                 echo '<p>' . $_SESSION['data']['description'] . '</p>';
@@ -77,9 +78,11 @@ $_SESSION['data'] = [
             ?>
         </div>
         <form action="PHP Scripts\processPayment.php" method="post" class="form">
+            <!-- function for going back to addjob page to edit job details -->
             <button onclick="history.back()" type="button" class="edit">Edit</button>
             <button type="submit" class="submit">Submit and pay with PayPal</button>
             <?php
+            // hidden form data that will be used for payment processing
                 echo '<input type="hidden" id="price" name="price" value="' . $_SESSION['data']['budget'] . '">';
                 echo '<input type="hidden" id="description" name="description" value="' . $_SESSION['data']['description'] . '">';
                 echo '<input type="hidden" id="jobName" name="jobName" value="' . $_SESSION['data']['title'] . '">';

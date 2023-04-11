@@ -39,8 +39,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             continue;
         }
 
-        // Check if the date of the job is before the selected date
-        if (!empty($date) && strtotime($job['date']) < strtotime($date)) {
+        // Check if the date of the job is different from the selected date
+        if (!empty($date) && date("Y-m-d", strtotime($job['date'])) != $date) {
             continue;
         }
     

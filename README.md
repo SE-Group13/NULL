@@ -35,10 +35,19 @@ To install and run the application, follow these steps:
 
     ```
 
+5. Navigate in the terminal to the Pet_Minder/SWEProject folder and run the following commands to install dependency for PayPal API.
 
-5. Start the Apache server in XAMPP.
+    ```
+    composer require paypal/rest-api-sdk-php
 
-6. Open your web browser and go to http://localhost/Pet_Minder/SWEProject/index.php to access the application.
+    ```
+
+6. Open processPayment.php and successPayment.php files from Pet_Minder/SWEProject/PHP Scripts folder, replace "token" and "secret" with your own
+one from from https://developer.paypal.com/dashboard/accounts. (Don't remove "")
+
+7. Start the Apache server in XAMPP.
+
+8. Open your web browser and go to http://localhost/Pet_Minder/SWEProject/index.php to access the application.
 
 
 

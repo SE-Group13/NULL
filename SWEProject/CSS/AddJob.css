@@ -123,6 +123,12 @@ select{
 		
 }
 
+.Budget{
+	display:inline-flex;
+	width: 60px;
+		
+}
+
 .submit{
 	display: block;
 	margin-left: auto;

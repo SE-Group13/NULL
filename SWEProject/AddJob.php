@@ -22,6 +22,9 @@
 		</div>
 
         <div>
+
+		<!-- this for the creation of the form -->
+
 			<form class = 'form' method="POST" action ="./reviewPayment.php" enctype="multipart/form-data">
 				<label class = 'center'> Create Posting </label>
 
@@ -69,8 +72,6 @@
 				<input type="submit" class = submit ></input>
 			</form>
         </div>
-
-
 	</div>
 
 	<?php include ROOT . "/PHP Scripts/footer.php" ?>

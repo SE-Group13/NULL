@@ -1,15 +1,19 @@
 <?php
 session_start();
-
+//this checks whether the page was reloaded, by checking whether the data is empty 
 
 if ($_SESSION['data']!= []){
 
+	//if the page is not reloaded data is decoded from the database
     $data =  json_decode( file_get_contents('.\..\Data\jobs.json', true));
-    $data[] = $_SESSION['data'];
 
+	//data gets added here
+	$data[] = $_SESSION['data'];
 
+	//data gets enteered into the database
     file_put_contents('.\..\Data\jobs.json', json_encode($data));
 
+	//session data is cleared preventing repeats entries form reloading
     $_SESSION['data'] = [];
 }
 ?>

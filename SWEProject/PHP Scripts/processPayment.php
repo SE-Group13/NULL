@@ -52,8 +52,8 @@ $transaction->setAmount($amount)
 ->setDescription($_POST['description']);
 
 $redirectUrls = new RedirectUrls();
-$redirectUrls->setReturnUrl("http://localhost/SWEProject/PHP%20Scripts/successPayment.php") // url for executing payment
-->setCancelUrl("http://localhost/SWEProject/AddJob.php"); // if cancel payment, go to addjob page
+$redirectUrls->setReturnUrl("http://localhost/Pet_Minder/SWEProject/PHP%20Scripts/successPayment.php") // url for executing payment
+->setCancelUrl("http://localhost/Pet_Minder/SWEProject/AddJob.php"); // if cancel payment, go to addjob page
 
 $payment = new Payment();
 $payment->setIntent('sale')

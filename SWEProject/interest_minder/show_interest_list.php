@@ -43,7 +43,7 @@
                     $name=$user['username'];
                 }
             }
-            if(strcmp($message['job_id'], $_GET['id'])){
+            if(!strcmp($message['job_id'], $_GET['id'])){
                 echo "<div class='job-details-container' onclick='confirmA(".$message['user_id'].", ".$message['job_id'].")'>".'<h2 class="job-title">' . $name . '</h2>'."<p>".$message['content']."</p>"."</div><br>";
             }
         }

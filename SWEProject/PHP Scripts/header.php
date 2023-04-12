@@ -27,7 +27,7 @@
                         ?>
                             <ul class="navMargin inlineList floatRight">
                                 <li><a class="text-white" href="AddJob.php">Post Jobs</a></li>
-                                <li><a class="text-white" href="owner_jobs.php">Current Jobs</a></li>
+                                <li><a class="text-white" href="owner_jobs.php">Your Jobs</a></li>
                                 <li><a class="text-white" href="PHP Scripts/logout.php">Log Out</a></li>
                             </ul>
                         <?php

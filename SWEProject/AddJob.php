@@ -56,7 +56,7 @@
 
 				<br>
 				<label class = "label" >Petminder's Reward (GBP):</label>
-				<input class ='Budget' required type="number" name = "deposit" style="font-size: 20px; min = '10'" ></input>
+				<input class ='Budget' required type="number" name = "deposit" style="font-size: 20px;" min = '10' ></input>
 
 				<label class= "inputImageLabel" required>
 					Add an image of your pet!

@@ -56,9 +56,9 @@
 
 				<br>
 				<label class = "label" >Petminder's Reward (GBP):</label>
-				<input class ='dateSelect' required type="number" name = "deposit" style="font-size: 20px; min = '10'" ></input>
+				<input class ='Budget' required type="number" name = "deposit" style="font-size: 20px; min = '10'" ></input>
 
-				<label class= "inputImageLabel">
+				<label class= "inputImageLabel" required>
 					Add an image of your pet!
 					<input	type= "file" name= "jobImage" class = "inputImage" required accept="image/png, image/jpg, image/jpeg">
 					<br>
